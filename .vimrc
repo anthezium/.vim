@@ -24,3 +24,6 @@ set tabstop=2
 set expandtab
 
 syntax on
+
+" use syntax highlighting colors that show up on a dark background
+set background=dark
