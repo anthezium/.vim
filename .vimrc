@@ -15,6 +15,7 @@ Bundle 'gmarik/Vundle.vim'
 " bundles
 Bundle 'kien/ctrlp.vim'
 Bundle 'rking/ag.vim'
+Bundle 'kazuoteramoto/vimtorrent'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,6 +39,15 @@ set background=dark
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
-" use ctrl+pgup to move the current tab left, ctrl+pgdown to move it right
+" use alt+pgup to move the current tab left, alt+pgdown to move it right
 nnoremap <silent> <A-PageUp> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-PageDown> :execute 'silent! tabmove ' . tabpagenr()<CR>
+
+" jump to search results as you type
+set incsearch
+
+" map tab to escape in insert mode
+imap <tab> <esc>
+
+" no syntax highlighting in latex code environments
+au filetype tex syntax region texZone start='\\begin{code}' end='\\end{code}'
