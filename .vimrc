@@ -32,8 +32,11 @@ set splitright
 
 syntax on
 
+" use syntax highlighting colors that show up on a light or dark background
+" depending on which background color the terminal emulator uses
+set t_RB
 " use syntax highlighting colors that show up on a dark background
-set background=dark
+"set background=dark
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
