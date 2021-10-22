@@ -3,21 +3,21 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-let g:vundle_default_git_proto = 'ssh'
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/Vundle.vim'
-" bundles
-Bundle 'kien/ctrlp.vim'
-Bundle 'rking/ag.vim'
-Bundle 'kazuoteramoto/vimtorrent'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"
+"let g:vundle_default_git_proto = 'ssh'
+"
+"" let Vundle manage Vundle
+"" required! 
+"Bundle 'gmarik/Vundle.vim'
+"" bundles
+"Bundle 'kien/ctrlp.vim'
+"Bundle 'rking/ag.vim'
+"Bundle 'kazuoteramoto/vimtorrent'
+"
+"" All of your Plugins must be added before the following line
+"call vundle#end()            " required
 
 " I want this, turn it back on after Vundle setup
 filetype plugin indent on
